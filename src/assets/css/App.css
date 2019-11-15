@@ -1,0 +1,206 @@
+element.style {
+    padding-left: 0%;
+}
+.App-logo {
+    height: 40vmin;
+}
+
+.App-header {
+    background-color: #E1E0DE;
+    color: #2E2E2E;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+}
+.headerElement{
+    padding-top:9px;
+    padding-left:9px;
+    padding-right:9px;
+}
+.activeHeader{
+    border-bottom: 2px solid #2E2E2E;
+}
+.sidebar {
+    height:100%;
+    position:fixed;
+    z-index:1000;
+  }
+.font-size{
+    font-size: 11pt;
+}
+h5{
+    font-size: 15pt;
+}
+p,label{
+    font-size: 12pt;
+}
+
+
+.Espaciado {
+    padding: 20px;
+}
+.Espaciados {
+    margin-bottom: 5%;
+}
+.seccion-inicio{
+    background-color: #F2F2F2;
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #2E2E2E;
+}
+
+
+.inicio-logo{
+    width: 200px;
+    height: auto;
+}
+.requisitos-logo{
+    width: 150px;
+    margin-left: 20%;
+}
+.puntodonacionlogo{
+        width: auto;
+        margin-left: auto;
+}
+.card-body {
+    padding: 8px 22px 10px;
+}
+.fondo{
+    opacity: 0.8;
+}
+.cardtamaño{
+    width: 14rem;
+    background: #F2F2F2;
+}
+.cardtamaño2{
+    width: 18rem;
+    background: #F2F2F2;
+}
+.frmsize{
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.App-Formulario{
+font-size: 15pt;
+padding:3% 10% 10% ;
+text-align: left;
+
+}
+.boton{
+    padding: 5px 100px 5px;
+    background:#F1414E;
+    border-color: #F1414E;
+}
+.botoncards{
+    padding: 5px 60px 5px;
+    background:#F1414E;
+    border-color: #F1414E;
+}
+.contenedor-tarjetas{
+    background-color: #F2F2F2;
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: #2E2E2E;
+}
+
+.tarjetas{
+    padding-bottom: 3%;
+}
+.tarjetas-img {
+    width: 50%;
+    height: auto;
+    padding-top: 10%;
+    padding-left:20%;
+    margin-left: 15%;
+}
+.myImage {
+    width: 1750px;
+    height: 600px;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+.App-footer{
+    background-color: #2E2E2E;
+    color: #E1E0DE;
+    padding: 10%;
+}
+.logo-footer{
+    margin-top: 20px;
+    display: flex;
+}
+.logo-footer img {
+    width: 36px;
+    height: 36px;
+    margin-right: 5%;
+}
+.App-Sfooter{
+    height: auto;
+    background-color: black;
+    color: #E1E0DE;
+    font-size: 13pt;
+}
+
+
+
+
+@media screen and (max-width: 988px) {
+    .font-size{
+        font-size: 13pt;
+    }
+    .App-header {
+        padding-right: 10%;
+        padding-left: 10%;
+        
+    }
+    .requisitos-logo{
+        width: 180px;
+        height: auto;
+        margin-left: 20%;
+    }
+    .activeHeader{
+        border-bottom: unset;
+    }
+    .headerElementr{
+        padding-left:9px;
+        padding-right:9px;
+    }
+    .App-Formulario{
+        padding: 10%;
+    }
+    p,label{
+        font-size: 10pt;
+    }
+    .row{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .cardtamaño2{
+        width: 14rem;
+    }
+    
+}
+@media screen and (max-width: 763px) {
+    .centro{
+        margin-left: 8.333333%;
+        
+    }
+
+
+}
+@media screen and (max-width: 475px) {
+    .centro{
+        
+        margin-left: unset;
+    }
+
+
+}
