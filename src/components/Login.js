@@ -7,34 +7,14 @@ class Login extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Container>
-                    <Row>
-                        <Col sm={7}>Imagen</Col>
-                        <Col sm={5}>
+               {/**<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.4.0/firebase-app.js"></script>
 
-                            <div className="App-Formulario">
-                                <Form>
-                                    <Form.Group controlId="formBasicEmail">
-                                        <Form.Label>Email address</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter email" />
-                                    </Form.Group>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-                                    <Form.Group controlId="formBasicPassword">
-                                        <Form.Label>Password</Form.Label>
-                                        <Form.Control type="password" placeholder="Password" />
-                                    </Form.Group>
-
-                                    <div style={{ textAlign: 'center', paddingTop: '40px' }}>
-                                        <Button variant="secondary" type="submit" className="boton" >
-                                            Iniciar
-                                        </Button>
-                                    </div>
-
-                                </Form>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script> */}
             </React.Fragment>
         );
     }

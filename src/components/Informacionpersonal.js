@@ -1,11 +1,5 @@
 import React from 'react'
 
-import img1 from '../assets/images/registrate a la pagina.png'
-import img2 from '../assets/images/reserva una cita en un hospital cercano.png'
-import img3 from '../assets/images/registrate a la pagina.png'
-import img4 from '../assets/images/registrate a la pagina.png'
-
-
 import CardsHeader from './CardsHeader';
 
 import { Container, Row, Col, Card } from 'react-bootstrap';

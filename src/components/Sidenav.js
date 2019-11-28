@@ -1,5 +1,6 @@
 import React from 'react'
-import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import { NavLink } from 'react-router-dom'
 
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -13,41 +14,59 @@ class Sidenav extends React.Component {
             <React.Fragment>
 
                 <div className="sidebar">
-                <SideNav
-                    onSelect={(selected) => {
-                        // Add your code here
-                    }}
-                >
-                    <SideNav.Toggle />
-                    <SideNav.Nav defaultSelected="home">
-                        <NavItem eventKey="home">
-                            <NavIcon>
-                                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
-                            </NavIcon>
-                            <NavText>
-                                Home
+                    <SideNav
+                        onSelect={(selected) => {
+                            // Add your code here
+                        }} className="color">
+                        <SideNav.Toggle />
+                        <SideNav.Nav defaultSelected="perfil">
+                            <NavItem eventKey="perfil">
+                                <NavIcon>
+                                    <NavLink to="/info" style={{ textDecoration: 'none' }}><i className="fas fa-user" style={{ fontSize: '1.75em' }} /></NavLink>
+                                </NavIcon>
+                                <NavText>
+                                <NavLink to="/info" style={{ textDecoration: 'none' }}>Perfil</NavLink>
                             </NavText>
-                        </NavItem>
-                        <NavItem eventKey="charts">
-                            <NavIcon>
-                                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
-                            </NavIcon>
-                            <NavText>
-                                Charts
-                             </NavText>
-                            <NavItem eventKey="charts/linechart">
-                                <NavText>
-                                    Line Chart
-                             </NavText>
                             </NavItem>
-                            <NavItem eventKey="charts/barchart">
+                            <NavItem eventKey="donar">
+                                <NavIcon>
+                                  <i className="fas fa-hand-holding-heart" style={{ fontSize: '1.75em' }}></i>
+                                </NavIcon>
                                 <NavText>
-                                    Bar Chart
+                                    Donar
                              </NavText>
+                                <NavItem eventKey="charts/linechart">
+                                    <NavText>
+                                        <NavLink to="/ruta-PuntosDonacion" style={{ color: '#2E2E2E',textDecoration: 'none' }}>Institucion</NavLink>
+                                    
+                             </NavText>
+                                </NavItem>
+                                <NavItem eventKey="charts/barchart">
+                                    <NavText>
+                                    <NavLink to="/ruta-CampañasDonacion" style={{ color: '#2E2E2E', textDecoration: 'none' }}>Campaña</NavLink>
+                                        
+                             </NavText>
+                                </NavItem>
                             </NavItem>
-                        </NavItem>
-                    </SideNav.Nav>
-                </SideNav>
+                            <NavItem eventKey="citas">
+                                <NavIcon>
+                                <NavLink to="/mis-citas" style={{ textDecoration: 'none' }} ><i className="fas fa-calendar-check" style={{ fontSize: '1.75em' }} ></i></NavLink>
+                                
+                                </NavIcon>
+                                <NavText>
+                                <NavLink to="/mis-citas" style={{ textDecoration: 'none' }}>Citas</NavLink>
+                            </NavText>
+                            </NavItem>
+                             <NavItem eventKey="cerrar">
+                                <NavIcon>
+                                <i className="fas fa-power-off" style={{ fontSize: '1.75em' }} ></i>
+                                </NavIcon>
+                                <NavText>
+                                <NavLink to="/info" style={{ textDecoration: 'none' }}>Cerrar Sesion</NavLink>
+                            </NavText>
+                            </NavItem>
+                        </SideNav.Nav>
+                    </SideNav>
                 </div>
 
             </React.Fragment>
