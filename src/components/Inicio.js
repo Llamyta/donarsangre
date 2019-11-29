@@ -1,11 +1,20 @@
 import React from 'react'
+import Card from './CardRND'
 import Fondo from '../assets/images/d3.png'
-import imagen from '../assets/images/imagenseccionmotivos.png'
+import Imagen from '../assets/images/imagenseccionmotivos.png'
 
 
-import { Image} from 'react-bootstrap'
+import { Image, Container, Row} from 'react-bootstrap'
 
 class Inicio extends React.Component {
+    state = {
+        cards: [
+            { title: 'Registrate', texto: 'Llena tu informacion en el formulario de registro', img: Imagen },
+            { title: 'Registrate', texto: 'Llena tu informacion en el formulario de registro', img: Imagen },
+            { title: 'Registrate', texto: 'Llena tu informacion en el formulario de registro', img: Imagen },
+            { title: 'Registrate', texto: 'Llena tu informacion en el formulario de registro', img: Imagen }
+        ]
+    };
     render() {
         return (
             <React.Fragment>
@@ -29,18 +38,21 @@ class Inicio extends React.Component {
                 <section className="seccion-inicio">
                     <div className="Espaciados">
                         <h3>¿Por qué Donar Sange?</h3>
-                        <div className="flip-card">
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                <img src="holder.js/171x180" roundedCircle />
-                                </div>
-                                    <div className="flip-card-back">
-                                        <h1>John Doe</h1>
-                                        <p>Architect & Engineer</p>
-                                        <p>We love that guy</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <Container>
+                            <Row>
+                            {
+                                    this.state.cards.map((cards, i) => {
+                                        return (
+                                            <Card key={i} cards={cards} />
+                                        )
+                                    })
+
+                                }
+
+                                
+                            </Row>
+                        </Container>
+                        
                         </div>
                 </section>
 

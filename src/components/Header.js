@@ -13,8 +13,9 @@ class Header extends React.Component {
 
         this.state = {
             show: false,
-        };
+        };        
     }
+    
 
     handleClose() {
         this.setState({ show: false });
@@ -26,7 +27,7 @@ class Header extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar collapseOnSelect expand="lg" className="App-header font-size grilla" sticky="top" style={{position:'fixed'}}>
+                <Navbar collapseOnSelect expand="lg" className="App-header font-size grilla" sticky="top" style={{position:'fixed'}} id="menu1">
                     <Navbar.Brand href="#home">
                         <div className="logo-header">
                             <img src={Logo} width="auto" height="60" className="d-inline-block align-top" alt="Logo" />

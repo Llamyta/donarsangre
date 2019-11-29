@@ -1,9 +1,11 @@
 element.style {
     padding-left: 0%;
 }
+
 .App-logo {
     height: 40vmin;
 }
+
 .App-header {
     position: absolute;
     left: 0;
@@ -13,100 +15,110 @@ element.style {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.774);
     width: 100%;
     box-sizing: border-box;
-    
-    
-}
-.headerElement{
-    padding-top:9px;
-    padding-left:9px;
-    padding-right:9px;
-}
-.activeHeader{
-    border-bottom: 2px solid #2E2E2E;
-}
-.sidebar {
-    height:100%;
-    position:fixed;
-    z-index:1000;
-  }
-  .sidenav---sidenav---_2tBP{
-      background-color: #F1414E !important;
-  }
-.font-size{
-    font-size: 11pt;
-}
-h5{
-    font-size: 15pt;
-}
-p,label{
-    font-size: 12pt;
 }
 
+.headerElement {
+    padding-top: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.activeHeader {
+    border-bottom: 2px solid #2E2E2E;
+}
+
+.color-nav {
+    background: rgb(189, 121, 43);
+    padding-bottom: 0px;
+    transition: 0.5s;
+}
+
+.font-size {
+    font-size: 11pt;
+}
+
+h5 {
+    font-size: 15pt;
+}
+
+p,
+label {
+    font-size: 12pt;
+}
 
 .Espaciado {
     padding: 20px;
 }
+
 .Espaciados {
     margin-bottom: 5%;
 }
-.seccion-inicio{
+
+.seccion-inicio {
     background-color: #F2F2F2;
-    
     font-size: 15pt;
     padding: 3% 13.6% 2% 13.6%;
     color: #2E2E2E;
     text-align: center;
 }
 
-
-.inicio-logo{
+.inicio-logo {
     width: 200px;
     height: auto;
 }
-.requisitos-logo{
+
+.requisitos-logo {
     width: 150px;
     margin-left: 20%;
 }
-.puntodonacionlogo{
-        width: auto;
-        margin-left: auto;
+
+.puntodonacionlogo {
+    width: auto;
+    margin-left: auto;
 }
+
 .card-body {
     padding: 8px 22px 10px;
 }
-.fondo{
+
+.fondo {
     opacity: 0.8;
 }
-.cardtamaño{
+
+.cardtamaño {
     width: 14rem;
     background: #F2F2F2;
 }
-.cardtamaño2{
+
+.cardtamaño2 {
     width: 18rem;
     background: #F2F2F2;
 }
-.frmsize{
+
+.frmsize {
     margin-top: 30%;
     margin-bottom: 30%;
 }
 
-.App-Formulario{
-font-size: 15pt;
-padding:3% 10% 10% ;
-text-align: left;
+.App-Formulario {
+    font-size: 15pt;
+    padding: 3% 10% 10%;
+    text-align: left;
+}
 
-}
-.boton{
+.boton {
     padding: 5px 100px 5px;
-    background:#F1414E;
+    background: #F1414E;
     border-color: #F1414E;
 }
-.botoncards{
+
+.botoncards {
     padding: 5px 60px 5px;
-    background:#F1414E;
+    background: #F1414E;
     border-color: #F1414E;
 }
-.contenedor-tarjetas{
+
+.contenedor-tarjetas {
     background-color: #F2F2F2;
     text-align: center;
     font-size: 15pt;
@@ -115,139 +127,144 @@ text-align: left;
     color: #2E2E2E;
 }
 
-.tarjetas{
+.tarjetas {
     padding-bottom: 3%;
 }
+
 .tarjetas-img {
     width: 50%;
     height: auto;
     padding-top: 10%;
-    padding-left:20%;
+    padding-left: 20%;
     margin-left: 15%;
 }
+
 .myImage {
     width: 1750px;
     height: 600px;
     background-image: url(../images/fondo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-  }
+}
 
-.App-footer{
+.App-footer {
     background-color: #2E2E2E;
     color: #E1E0DE;
     padding: 10%;
 }
-.logo-footer{
+
+.logo-footer {
     margin-top: 20px;
     display: flex;
 }
+
 .logo-footer img {
     width: 36px;
     height: 36px;
     margin-right: 5%;
 }
-.App-Sfooter{
+
+.App-Sfooter {
     height: auto;
     background-color: black;
     color: #E1E0DE;
     font-size: 13pt;
 }
- /*tarjetas hover redonditas*/
- .flip-card {
+
+
+/*tarjetas hover redonditas*/
+
+.flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 239px;
+    height: 239px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; 
-  }
-  
-  .flip-card-inner {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  .flip-card-front {
-    background-color: #bbb;
+}
+
+.flip-card-front {
+    background-color: transparent;
     color: black;
-  }
-  .flip-card-back {
-    background-color: dodgerblue;
+}
+
+.flip-card-back {
+    background-color: #F77E79;
     color: white;
+    border-radius: 50%;
     transform: rotateY(180deg);
-  }
-
-
+}
 
 @media screen and (max-width: 988px) {
-    .font-size{
+    .font-size {
         font-size: 13pt;
     }
     .App-header {
         padding-right: 10%;
         padding-left: 10%;
-        
     }
-    .requisitos-logo{
+    .requisitos-logo {
         width: 180px;
         height: auto;
         margin-left: 20%;
     }
-    .activeHeader{
+    .activeHeader {
         border-bottom: unset;
     }
-    .headerElementr{
-        padding-left:9px;
-        padding-right:9px;
+    .headerElementr {
+        padding-left: 9px;
+        padding-right: 9px;
     }
-    .App-Formulario{
+    .App-Formulario {
         padding: 10%;
     }
-    p,label{
+    p,
+    label {
         font-size: 10pt;
     }
-    .row{
+    .row {
         margin-left: 15px;
         margin-right: 15px;
     }
-    .cardtamaño2{
+    .cardtamaño2 {
         width: 14rem;
     }
-    .ocultar{
+    .ocultar {
         display: none;
     }
     .form-control {
         width: auto;
     }
-    
 }
+
 @media screen and (max-width: 763px) {
-    .centro{
+    .centro {
         margin-left: 8.333333%;
-        
     }
-
-
 }
+
 @media screen and (max-width: 475px) {
-    .centro{
-        
+    .centro {
         margin-left: unset;
     }
-
-
 }
