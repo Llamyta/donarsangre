@@ -1,8 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown, Modal, Button, Row, Col, Container, Form } from 'react-bootstrap';
-import Logo from '../assets/images/logp.PNG'
+import Logo from '../assets/images/logoM.png'
 import { NavLink } from 'react-router-dom'
-import Fondo from '../assets/images/d5.png'
 
 class Header extends React.Component {
     constructor(props, context) {

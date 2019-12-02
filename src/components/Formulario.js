@@ -182,8 +182,8 @@ class Formulario extends React.Component {
                                                             <Form.Control type="password" placeholder="Password" />
                                                         </Form.Group>
 
-                                                        <div style={{ textAlign: 'center', paddingTop: '40px' }}>
-                                                            <Button variant="secondary" type="submit" className="boton" >
+                                                        <div style={{ textAlign: 'center', paddingTop: '40px'}}>
+                                                            <Button variant="secondary" type="submit" className="boton">
                                                                 Iniciar
                                         </Button>
                                                         </div>

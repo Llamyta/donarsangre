@@ -10,7 +10,7 @@ class CardsHeader extends React.Component {
             <React.Fragment>
                 <section className="tarjetas">
                     <Col >
-                        <Card border="secondary" className={estilotarjeta}>
+                        <Card border="transparent" className={estilotarjeta}>
                             <div className={estilo}>
                                 <Card.Img variant="top" src={img} alt={title} />
                             </div>

@@ -11,53 +11,52 @@ import Logo6 from '../assets/images/7.png'
 import Logo7 from '../assets/images/8.png'
 import Logo8 from '../assets/images/9.png'
 import Logo9 from '../assets/images/10.png'
-import Logo10 from '../assets/images/11.png'
-import Logo11 from '../assets/images/12.png'
+import Logo10 from '../assets/images/15.png'
+import Logo11 from '../assets/images/16.png'
 import Logo12 from '../assets/images/13.png'
 import { Container, Row } from 'react-bootstrap';
 class Requisitos extends React.Component {
     state = {
         cards: [
-            {texto: 'No presentar síntomas de Resfriado', img: Logo1, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'Ser mayor de edad y no tener más de 65', img: Logo2, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'Presentar tu Cedula de Identidad Vigente', img: Logo3, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'No presentar síntomas de Resfriado', img: Logo4, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'No haber pasado más de 4 horas sin comer', img: Logo5, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'No haber consumido analgésicos', img: Logo6, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'No haberse hecho tatuajes o perforaciones recientemente', img: Logo7, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'No haber consumido alcohol en las últimas 48 horas', img: Logo8, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'Pueden donar quienes padecieron Hepatitis A antes de los 10 años de edad', img: Logo9, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'Cirugía menor y / o extracción dental no complicada, esperar 7 días', img: Logo10, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'Cirugía mayor esperar 6 meses; si hubo transfusión de sangre esperar un año', img: Logo11, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' },
-            {texto: 'No haber sido detectado con VIH, Chagas o Hepatitis tipo B o C', img: Logo12, estilo: 'requisitos-logo',estilotarjeta:'cardtamaño' }
+            { texto: 'No presentar síntomas de Resfriado', img: Logo1, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'Ser mayor de edad y no tener más de 65', img: Logo2, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'Presentar tu Cedula de Identidad Vigente', img: Logo3, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'No presentar síntomas de Resfriado', img: Logo4, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'No haber pasado más de 4 horas sin comer', img: Logo5, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'No haber consumido analgésicos', img: Logo6, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'No haberse hecho tatuajes o perforaciones recientemente', img: Logo7, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'No haber consumido alcohol en las últimas 48 horas', img: Logo8, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'Pueden donar quienes padecieron Hepatitis A antes de los 10 años de edad', img: Logo9, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'Cirugía menor y / o extracción dental no complicada, esperar 7 días', img: Logo10, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'Cirugía mayor esperar 6 meses; si hubo transfusión de sangre esperar un año', img: Logo11, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' },
+            { texto: 'No haber sido detectado con VIH, Chagas o Hepatitis tipo B o C', img: Logo12, estilo: 'requisitos-logo', estilotarjeta: 'cardtamaño' }
         ]
     };
     render() {
         return (
             <React.Fragment>
-                <div>
-                    <section className="contenedor-tarjetas ">
-                        <div className="seccion-inicio">
-                            <h4>Requisitos para ser Donador</h4>
+                        <div >
+                            <div className="Espaciados" style={{textAlign:'center'}}>
+                                <div className="Espaciados">
+                                <h4>Requisitos para ser Donador</h4>
+                                </div>
+                                <Container className='Component-Bg imagenfondo'>
+                                    <Row>
+                                        {
+                                            this.state.cards.map((cards, i) => {
+                                                return (
+                                                    <CardsHeader key={i} cards={cards} />
+                                                )
+                                            })
 
+                                        }
+
+
+                                    </Row>
+                                </Container>
+
+                            </div>
                         </div>
-                        <Container>
-                            <Row>
-                                {
-                                    this.state.cards.map((cards, i) => {
-                                        return (
-                                            <CardsHeader key={i} cards={cards} />
-                                        )
-                                    })
-
-                                }
-
-
-
-                            </Row>
-                        </Container>
-                    </section>
-                </div>
 
             </React.Fragment>
         );
