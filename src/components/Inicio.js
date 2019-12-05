@@ -5,14 +5,11 @@ import Imagen from '../assets/images/imagenseccionmotivos.png'
 import Imagen2 from '../assets/images/imagenseccionmotivos2.png'
 import Imagen3 from '../assets/images/imagenseccionmotivos3.png'
 import Imagen4 from '../assets/images/imagenseccionmotivos4.png'
-import Fondo2 from '../assets/images/fondoseccion2.png'
-import Logo from '../assets/images/paso1.png'
-import Logo2 from '../assets/images/paso2.png'
-import Logo3 from '../assets/images/paso3.png'
-import Logo4 from '../assets/images/paso4.png'
+import Fondo2 from '../assets/images/recuperar.png'
+import Logo from '../assets/images/imagen.png'
 
 
-import {  Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 class Inicio extends React.Component {
     state = {
@@ -33,8 +30,7 @@ class Inicio extends React.Component {
                             backgroundSize: 'cover',
                             backgroundPosition: 'center center',
                             backgroundRepeat: 'no-repeat',
-                            width: 'auto',
-                            height: '600px',
+                            height: '800px'
 
                         }}>
 
@@ -44,8 +40,8 @@ class Inicio extends React.Component {
 
                 <div className="seccion-inicio">
                     <div className="Espaciados">
-                        <h4>¿Por qué Donar Sange?</h4>
-                        <Container >
+                        <h3>¿Por qué Donar Sange?</h3>
+                        <Container style={{ marginBottom: '8%' }}>
                             <Row>
                                 {
                                     this.state.cards.map((cards, i) => {
@@ -62,43 +58,39 @@ class Inicio extends React.Component {
 
                     </div>
                 </div>
-                <div style={{backgroundColor:'white'}}>
+                <div style={{ backgroundColor: 'white' }}>
                     <div >
-                        
-                        <Container style={{margin:'0', padding:'0'}}>
-                            <Row>
-                                <Col style={{marginLeft:'-10%'}}>
-                                <img src={Fondo2}  >
-                                </img>                            
-                                
-                                </Col>
-                                <Col>
-                                <div className="Espaciados" >
-                                <h3>Pasos para Donar Sangre</h3>
-                                </div>
-                                <Row style={{margin:'0', padding:'0',width:'300px',minHeight:'15vh'}}>
-                                <img src={Logo} style={{width:'100px',padding:'0 10px 0 10px'}}></img>  
-                                <h5>Registrate al sitio.</h5>
+                        <div className="fondo">
+                            <div className='Component-Bg'
+                                style={{
+                                    backgroundImage: 'url(' + Fondo2 + ')',
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center center',
+                                    backgroundRepeat: 'no-repeat',
+                                    height: '800px'
 
-                                </Row>
-                                <Row style={{margin:'0', padding:'0',width:'300px',minHeight:'15vh'}}>
-                                <img src={Logo2} style={{width:'100px',padding:'0 10px 0 10px'}}></img>  
-                                <h5>Registrate al sitio.</h5>
 
-                                </Row>
-                                <Row style={{margin:'0', padding:'0',width:'300px' ,minHeight:'15vh'}}>
-                                <img src={Logo3} style={{width:'100px',padding:'0 10px 0 10px'}}></img>  
-                                <h5>Registrate al sitio.</h5>
+                                }}>
+                                <Container>
+                                    <Row style={{ padding: '5% 0 5% 0' }}>
+                                        <Col xs={6} md={6}>
 
-                                </Row>
-                                <Row style={{margin:'0', padding:'0',width:'300px',minHeight:'15vh'}}>
-                                <img src={Logo4} style={{width:'100px',padding:'0 10px 0 10px'}}></img>  
-                                <h5>Registrate al sitio.</h5>
+                                        </Col>
+                                        <Col xs={12} md={6} style={{ padding: '0' }}>
+                                            <div className="Espaciados" >
+                                                <h3>Pasos para Donar Sangre</h3>
+                                            </div>
+                                            <img src={Logo} alt='...' style={{ width: 'auto', padding: '0 5% 0 5%' }}></img>
 
-                                </Row>
-                                </Col>
-                            </Row>
-                        </Container>
+
+                                        </Col>
+                                    </Row>
+                                </Container>
+
+
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>

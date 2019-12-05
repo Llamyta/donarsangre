@@ -12,7 +12,7 @@ class Registrarse extends React.Component {
 
                     <section className="Espaciados" style={{ textAlign: 'center' }}>
                         <div className="Espaciados">
-                            <h4>Formulario de Registro</h4>
+                            <h3>Formulario de Registro</h3>
 
                         </div>
                         <Button variant="primary" type="submit" style={{width:'272px'}} >

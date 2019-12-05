@@ -27,7 +27,7 @@ element.style {
 .App-header {
     position: absolute;
     left: 0;
-    padding: 0 185px;
+    padding: 0 250px;
     padding-bottom: 20px;
     background: transparent;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.774);
@@ -60,7 +60,7 @@ h5 {
     font-size: 15pt;
 }
 h3 {
-    padding: 0 0 4% 0;
+    padding: 0 0 6% 0;
 }
 
 
@@ -284,17 +284,5 @@ label {
     }
     .form-control {
         width: auto;
-    }
-}
-
-@media screen and (max-width: 763px) {
-    .centro {
-        margin-left: 8.333333%;
-    }
-}
-
-@media screen and (max-width: 475px) {
-    .centro {
-        margin-left: unset;
     }
 }

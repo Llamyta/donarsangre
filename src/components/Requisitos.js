@@ -14,6 +14,7 @@ import Logo9 from '../assets/images/10.png'
 import Logo10 from '../assets/images/15.png'
 import Logo11 from '../assets/images/16.png'
 import Logo12 from '../assets/images/13.png'
+import Fondo from '../assets/images/fondoseccionrequisitos.png'
 import { Container, Row } from 'react-bootstrap';
 class Requisitos extends React.Component {
     state = {
@@ -35,28 +36,42 @@ class Requisitos extends React.Component {
     render() {
         return (
             <React.Fragment>
-                        <div >
-                            <div className="Espaciados" style={{textAlign:'center'}}>
-                                <div className="Espaciados">
-                                <h4>Requisitos para ser Donador</h4>
-                                </div>
-                                <Container className='Component-Bg imagenfondo'>
-                                    <Row>
-                                        {
-                                            this.state.cards.map((cards, i) => {
-                                                return (
-                                                    <CardsHeader key={i} cards={cards} />
-                                                )
-                                            })
-
-                                        }
-
-
-                                    </Row>
-                                </Container>
-
-                            </div>
+                <div >
+                    <div className="Espaciados" style={{ textAlign: 'center' }}>
+                        <div className="Espaciados">
+                            <h3>Requisitos para ser Donador</h3>
                         </div>
+                        <Container className='Component-Bg imagenfondo'>
+                            <Row>
+                                {
+                                    this.state.cards.map((cards, i) => {
+                                        return (
+                                            <CardsHeader key={i} cards={cards} />
+                                        )
+                                    })
+
+                                }
+
+
+                            </Row>
+                        </Container>
+
+                    </div>
+                </div>
+                <div className="fondo">
+                    <div className='Component-Bg'
+                        style={{
+                            backgroundImage: 'url(' + Fondo + ')',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center center',
+                            backgroundRepeat: 'no-repeat',
+                            height: '400px'
+
+                        }}>
+
+                    </div>
+
+                </div>
 
             </React.Fragment>
         );

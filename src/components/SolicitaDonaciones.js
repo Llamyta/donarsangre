@@ -4,10 +4,9 @@ import CardsHeader from './CardsHeader';
 
 import { Container, Row } from 'react-bootstrap';
 
-import img1 from '../assets/images/registrate a la pagina.png'
-import img2 from '../assets/images/reserva una cita en un hospital cercano.png'
-import img3 from '../assets/images/registrate a la pagina.png'
-import img4 from '../assets/images/registrate a la pagina.png'
+import img1 from '../assets/images/llena.png'
+import img2 from '../assets/images/tasks-solid.png'
+import img3 from '../assets/images/compartir.png'
 
 class SolicitaDonaciones extends React.Component {
     state = {
@@ -24,8 +23,10 @@ class SolicitaDonaciones extends React.Component {
                     {/**corregir padding */}
                 <section className="contenedor-tarjetas " >
                     <div className="seccion-inicio" >
-                    <h4>¿Como funciona el proceso de solicitud?</h4>
+                    <div className="Espaciados">
+                    <h3>¿Como funciona el proceso de solicitud?</h3>
 
+                    </div>
                     </div>
                         <Container style={{paddingLeft:'4%'}}>
                             <Row>

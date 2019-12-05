@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown, Modal, Button, Row, Col, Container, Form } from 'react-bootstrap';
-import Logo from '../assets/images/logoM.png'
+import Logo from '../assets/images/dona sangre.png'
 import { NavLink } from 'react-router-dom'
 
 class Header extends React.Component {
@@ -60,14 +60,11 @@ class Header extends React.Component {
                                 aria-labelledby="contained-modal-title-vcenter"
                                 centered>
                                 <Modal.Header closeButton>
-                                    <Modal.Title>Modal heading</Modal.Title>
+                                    <Modal.Title>Iniciar Sesion</Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
 
                                     <Container>
-                                        <Row>
-                                            <Col sm={7} className="ocultar">Imagen</Col>
-                                            <Col sm={5}>
 
                                                 <div className="App-Formulario">
                                                     <Form>
@@ -89,8 +86,6 @@ class Header extends React.Component {
 
                                                     </Form>
                                                 </div>
-                                            </Col>
-                                        </Row>
                                     </Container>
                                 </Modal.Body>
                             </Modal>
