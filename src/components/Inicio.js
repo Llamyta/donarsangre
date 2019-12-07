@@ -7,6 +7,7 @@ import Imagen3 from "../assets/images/imagenseccionmotivos3.png";
 import Imagen4 from "../assets/images/imagenseccionmotivos4.png";
 import Fondo2 from "../assets/images/recuperar.png";
 import Logo from "../assets/images/imagen.png";
+import Login from './Login';
 
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -34,7 +35,7 @@ class Inicio extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment>        
         <div className="fondo">
           <div
             className="Component-Bg"
@@ -75,10 +76,11 @@ class Inicio extends React.Component {
 
         <div className="seccion-inicio">
           <div className="Espaciados" style={{paddingTop:"0"}}>
-            <div style={{background: "#F1414E", color: "white",marginBottom: "100px"}}>
+            <div style={{marginBottom: "5%", paddingTop:"8%"}}>
               <h3 style={{ fontFamily: "learning curve", fontSize: "40px",fontWeight: "bold",padding: "30px 0 30px 0"}}>
                 ¿Por qué Donar Sange?
               </h3>
+              <Login/>
             </div>
             <Container style={{ marginBottom: "8%" }}>
               <Row>

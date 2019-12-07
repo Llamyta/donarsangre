@@ -1,13 +1,17 @@
 import React from 'react'
 import Formulario from './Formulario';
 import Logo from '../assets/images/google.jpg'
-
 import { Button } from 'react-bootstrap';
+
+
+
 class Registrarse extends React.Component {
 
     render() {
         return (
             <React.Fragment>
+                
+
                 <div>
 
                     <section className="Espaciados" style={{ textAlign: 'center' }}>
@@ -32,5 +36,7 @@ class Registrarse extends React.Component {
         );
     }
 }
-export default Registrarse;
+
+
+export default Registrarse; 
 

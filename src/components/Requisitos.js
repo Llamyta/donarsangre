@@ -39,7 +39,7 @@ class Requisitos extends React.Component {
                 <div >
                     <div className="Espaciados" style={{ textAlign: 'center' }}>
                         <div className="Espaciados">
-                            <h3>Requisitos para ser Donador</h3>
+                            <h1 style={{fontFamily: "learning curve"}}>Requisitos para ser Donador</h1>
                         </div>
                         <Container className='Component-Bg imagenfondo'>
                             <Row>
