@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Modal, Button, Row, Col, Container, Form } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Modal, Button, Container, Form } from 'react-bootstrap';
 import Logo from '../assets/images/dona sangre.png'
 import { NavLink } from 'react-router-dom'
 
@@ -12,7 +12,25 @@ class Header extends React.Component {
 
         this.state = {
             show: false,
-        };        
+        };                
+
+        this.navbarAnimation = React.createRef()
+          
+    }
+    componentDidMount() {
+        const menu = document.getElementById("menu1");                
+        // const altura = menu.offsetTop;
+        const altura = 150;
+          window.addEventListener('scroll', function() {
+            if (window.pageYOffset > altura) {         
+              menu.classList.add('color-nav');
+            } else {
+              menu.classList.remove('color-nav');
+              menu.classList.add('color-nav2');
+
+            }
+          });
+        
     }
     
 
@@ -23,10 +41,10 @@ class Header extends React.Component {
     handleShow() {
         this.setState({ show: true });
     }
-    render() {
+    render() {                        
         return (
             <React.Fragment>
-                <Navbar collapseOnSelect expand="lg" className="App-header font-size grilla" sticky="top" style={{position:'fixed'}} id="menu1">
+                <Navbar collapseOnSelect expand="lg" className="App-header font-size grilla" sticky="top" style={{position:'fixed'}} id="menu1" ref={this.navbarAnimation}>
                     <Navbar.Brand href="#home">
                         <div className="logo-header">
                             <img src={Logo} width="auto" height="60" className="d-inline-block align-top" alt="Logo" />
@@ -98,7 +116,9 @@ class Header extends React.Component {
                 </Navbar>
             </React.Fragment>
         );
+        
     }
+    
 }
 export default Header;
 

@@ -50,8 +50,12 @@ element.style {
 }
 
 .color-nav {
-    background: rgb(189, 121, 43);
+    background: #4CBCB3;
     padding-bottom: 0px;
+    transition: 0.5s;
+}
+
+.color-nav2 {
     transition: 0.5s;
 }
 
@@ -206,7 +210,7 @@ label {
 .flip-card {
     background-color: transparent;
     width: 239px;
-    height: 239px;
+    height: 220px;
     background-color: #F2F2F2;
     perspective: 1000px;
     padding: 0 10px 0 10px;
@@ -261,6 +265,7 @@ label {
     }
     .activeHeader {
         border-bottom: unset;
+        /* background: red; */
     }
     .headerElementr {
         padding-left: 9px;
