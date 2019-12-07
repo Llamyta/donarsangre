@@ -32,9 +32,7 @@ class Inicio extends React.Component {
     ]
   };
 
-  
   render() {
-      
     return (
       <React.Fragment>
         <div className="fondo">
@@ -48,17 +46,40 @@ class Inicio extends React.Component {
               height: "800px"
             }}
           >
-            <div className="container" style={{paddingTop: "350px", paddingLeft:"100px"}}>
-              <h1 style={{ color: "white",fontFamily:"learning curve", fontSize: "60px" }}><b>Donar Sangre</b></h1>
-              <h1 style={{ color: "white",fontFamily:"learning curve", fontSize: "60px" }}>para <b>Salvar Vidas...</b></h1>
-              <button className="btn btn-danger mt-3" >Quiero Donar</button>
+            <div
+              className="container"
+              style={{ paddingTop: "350px", paddingLeft: "100px" }}
+            >
+              <h1
+                style={{
+                  color: "white",
+                  fontFamily: "learning curve",
+                  fontSize: "60px"
+                }}
+              >
+                <b>Donar Sangre</b>
+              </h1>
+              <h1
+                style={{
+                  color: "white",
+                  fontFamily: "learning curve",
+                  fontSize: "60px"
+                }}
+              >
+                para <b>Salvar Vidas...</b>
+              </h1>
+              <button className="btn btn-danger mt-3">Quiero Donar</button>
             </div>
           </div>
         </div>
 
         <div className="seccion-inicio">
           <div className="Espaciados">
-            <h3 style={{fontFamily:"learning curve", fontSize: "40px"}}>¿Por qué Donar Sange?</h3>
+            <div style={{background: "#F1414E", color: "white",marginBottom: "100px"}}>
+              <h3 style={{ fontFamily: "learning curve", fontSize: "40px",fontWeight: "bold",padding: "30px 0 30px 0"}}>
+                ¿Por qué Donar Sange?
+              </h3>
+            </div>
             <Container style={{ marginBottom: "8%" }}>
               <Row>
                 {this.state.cards.map((cards, i) => {
@@ -86,7 +107,14 @@ class Inicio extends React.Component {
                     <Col xs={6} md={6}></Col>
                     <Col xs={12} md={6} style={{ padding: "0" }}>
                       <div className="Espaciados">
-                        <h3 style={{fontFamily:"learning curve", fontSize: "40px"}}>Pasos para Donar Sangre</h3>
+                        <h3
+                          style={{
+                            fontFamily: "learning curve",
+                            fontSize: "40px"
+                          }}
+                        >
+                          Pasos para Donar Sangre
+                        </h3>
                       </div>
                       <img
                         src={Logo}

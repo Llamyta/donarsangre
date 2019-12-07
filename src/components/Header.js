@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Modal, Button, Row, Col, Container, Form } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Modal, Button, Container, Form } from 'react-bootstrap';
 import Logo from '../assets/images/dona sangre.png'
 import { NavLink } from 'react-router-dom'
 
