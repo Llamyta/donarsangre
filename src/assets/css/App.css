@@ -77,7 +77,7 @@ label {
 }
 
 .Espaciados {
-    padding: 0 0 3% 0;
+    padding: 8% 0 3% 0;
 }
 
 .seccion-inicio {
@@ -265,6 +265,7 @@ label {
     }
     .activeHeader {
         border-bottom: unset;
+        /* background: red; */
     }
     .headerElementr {
         padding-left: 9px;

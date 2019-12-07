@@ -74,7 +74,7 @@ class Inicio extends React.Component {
         </div>
 
         <div className="seccion-inicio">
-          <div className="Espaciados">
+          <div className="Espaciados" style={{paddingTop:"0"}}>
             <div style={{background: "#F1414E", color: "white",marginBottom: "100px"}}>
               <h3 style={{ fontFamily: "learning curve", fontSize: "40px",fontWeight: "bold",padding: "30px 0 30px 0"}}>
                 ¿Por qué Donar Sange?
