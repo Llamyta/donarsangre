@@ -82,7 +82,6 @@ class Inicio extends React.Component {
                                             </div>
                                             <img src={Logo} alt='...' style={{ width: 'auto', padding: '0 5% 0 5%' }}></img>
 
-
                                         </Col>
                                     </Row>
                                 </Container>

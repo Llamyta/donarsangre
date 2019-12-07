@@ -9,6 +9,8 @@ import img from '../assets/images/Requisitosdonarorganos.png'
 import img2 from '../assets/images/Requisitosdonarorganos2.png'
 import img3 from '../assets/images/Requisitosdonarorganos3.png'
 import img4 from '../assets/images/Requisitosdonarorganos4.png'
+import Logo from '../assets/images/organos.png'
+import Logo1 from '../assets/images/tejido.png'
 
 
 
@@ -35,7 +37,7 @@ class DoancionOyT extends React.Component {
                             backgroundSize: 'cover',
                             backgroundPosition: 'center center',
                             backgroundRepeat: 'no-repeat',
-                            height: '600px'
+                            height: '700px'
 
                         }}>
 
@@ -45,7 +47,8 @@ class DoancionOyT extends React.Component {
                 <div className="seccion-inicio">
                     <div className="Espaciados">
                         <h3>Requisitos para donar Organos</h3>
-                        <Container style={{ marginBottom: '8%' }}>
+                        
+                        <Container style={{ marginBottom: '5%' }}>
                             <Row>
                                 {
                                     this.state.cards.map((cards, i) => {
@@ -62,125 +65,25 @@ class DoancionOyT extends React.Component {
 
                     </div>
                 </div>
-                <div style={{ backgroundColor: 'white' }}>
-                    <div >
-                        <div className="fondo">
-                            <div className='Component-Bg'
-                                style={{
-                                    backgroundImage: 'url(' + Fondo + ')',
-                                    backgroundSize: 'cover',
-                                    backgroundPosition: 'center center',
-                                    backgroundRepeat: 'no-repeat',
-                                    height: '800px'
-
-
-                                }}>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
+               
                  <div >
                     <section className="contenedor-tarjetas ">
                         <div className="seccion-inicio">
-                            <h4>¿Cuales son los requisitos para poder Donar Organos?</h4>
+                            <h3>¿Que Organos puedo Donar?</h3>
 
                         </div>
-                        <Container>
-                            <Row>
-                                {
-                                    this.state.cards.map((cards, i) => {
-                                        return (
-                                            <CardsHeader key={i} cards={cards} />
-                                        )
-                                    })
-
-                                }
-
-
-                            </Row>
+                        <Container  style={{ marginBottom: '5%' }}>
+                        <Row>
+                            <Col>
+                                <img src={Logo} alt='...' style={{ width: 'auto', padding: '0 5% 0 5%' }}></img>                            
+                            </Col>
+                            <Col>
+                                <img src={Logo1} alt='...' style={{ width: 'auto', padding: '0 5% 0 5%' }}></img>    
+                            </Col>
+                        </Row>
                         </Container>
                     </section>
-                    <section className="contenedor-tarjetas ">
-                        <div className="seccion-inicio">
-                            <h4>¿Qué organos puedes Donar?</h4>
-
-                        </div>
-                        <Container>
-                            {/**esta clase para poder centrar los cards */}
-                        <div className="offset-2 col-10">
-                            <Row>
-                                {
-                                    this.state.cards1.map((cards, i) => {
-                                        return (
-                                            <CardsHeader key={i} cards={cards} />
-                                        )
-                                    })
-
-                                }
-
-
-                            </Row>
-                        </div>
-                        </Container>
-                    </section>
-                    <section className="contenedor-tarjetas ">
-                        <div className="seccion-inicio">
-                            <h4>¿Qué organos puedes Donar?</h4>
-
-                        </div>
-                        <Container>
-                            {/**esta clase para poder centrar los cards */}
-                        <div className="offset-2 col-10">
-                            <Row>
-                                {
-                                    this.state.cards1.map((cards, i) => {
-                                        return (
-                                            <CardsHeader key={i} cards={cards} />
-                                        )
-                                    })
-
-                                }
-
-
-                            </Row>
-                        </div>
-                        </Container>
-                    </section>
-                    <section className="contenedor-tarjetas ">
-                        <div className="seccion-inicio">
-                            <h4>¿Qué organos puedes Donar?</h4>
-
-                        </div>
-                        <Container>
-                            {/**esta clase para poder centrar los cards */}
-                        <div className="offset-2 col-10">
-                            <Row>
-                                {
-                                    this.state.cards1.map((cards, i) => {
-                                        return (
-                                            <CardsHeader key={i} cards={cards} />
-                                        )
-                                    })
-
-                                }
-
-
-                            </Row>
-                        </div>
-                        </Container>
-                    </section>
+                   
 
                 </div>
             </React.Fragment>

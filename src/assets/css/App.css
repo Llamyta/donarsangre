@@ -1,13 +1,16 @@
 element.style {
     padding-left: 0%;
 }
+
 .App-logo {
     height: 40vmin;
 }
+
 .btn-link {
-    color:#4CBCB3;
+    color: #4CBCB3;
 }
-.imagenfondo{
+
+.imagenfondo {
     background-image: url(../images/logoparafondo10.png);
     background-size: cover;
     background-position: center center;
@@ -17,7 +20,8 @@ element.style {
     background-color: transparent;
     /*opacity: 30%;*/
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +38,6 @@ element.style {
     width: 100%;
     box-sizing: border-box;
 }
-
 
 .headerElement {
     padding-top: 9px;
@@ -59,16 +62,15 @@ element.style {
 h5 {
     font-size: 15pt;
 }
+
 h3 {
     padding: 0 0 6% 0;
 }
-
 
 p,
 label {
     font-size: 12pt;
 }
-
 
 .Espaciados {
     padding: 8% 0 3% 0;
@@ -79,7 +81,6 @@ label {
     font-size: 15pt;
     color: #2E2E2E;
     text-align: center;
-    
 }
 
 .inicio-logo {
@@ -91,7 +92,6 @@ label {
     width: 150px;
     margin-left: 20%;
 }
-
 
 .card-body {
     padding: 8px 22px 10px;
@@ -110,6 +110,7 @@ label {
     width: 18rem;
     background: transparent ! important;
 }
+
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -118,10 +119,11 @@ label {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-     background-color: transparent; 
-     background-clip: unset; 
-     border: none; 
+    background-color: transparent;
+    background-clip: unset;
+    border: none;
 }
+
 .frmsize {
     margin-top: 30%;
     margin-bottom: 30%;
@@ -200,7 +202,6 @@ label {
 
 
 /*tarjetas hover redonditas*/
-
 
 .flip-card {
     background-color: transparent;
