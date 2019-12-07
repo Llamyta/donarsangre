@@ -50,8 +50,12 @@ element.style {
 }
 
 .color-nav {
-    background: rgb(189, 121, 43);
+    background: #4CBCB3;
     padding-bottom: 0px;
+    transition: 0.5s;
+}
+
+.color-nav2 {
     transition: 0.5s;
 }
 

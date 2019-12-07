@@ -31,7 +31,10 @@ class Inicio extends React.Component {
       }
     ]
   };
+
+  
   render() {
+      
     return (
       <React.Fragment>
         <div className="fondo">
